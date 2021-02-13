@@ -1,0 +1,33 @@
+.blog__imagenesLista {
+    margin: 10px;
+}
+
+section#blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "menuPrincipal menuPrincipal menuPrincipa"
+    "notas notas notas"
+    "footer footer footer";
+}
+
+header#menuPrincipal {
+    grid-area: menuPrincipal;
+}
+
+section#blogSection {
+    grid-area: notas;
+}
+
+section#blogSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+
+
+
+footer {
+    grid-area: footer;
+}

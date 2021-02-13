@@ -1,0 +1,92 @@
+section#paginaServicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "menuPrincipal menuPrincipal menuPrincipal"
+    "rrss rrss rrss"
+    "desarrollo desarrollo desarrollo"
+    "ecommerce ecommerce ecommerce"
+    "contacto contacto contacto"
+    "footer footer footer";
+}
+header {
+    grid-area: menuPrincipal;
+}
+section#rrss {
+    grid-area: rrss;
+}
+section#desarrollo {
+    grid-area: desarrollo;
+}
+section#ecommerce {
+   grid-area: ecommerce;
+}
+section#contacto {
+    grid-area: contacto;
+}
+footer {
+    grid-area: footer;
+}
+
+
+section#rrss {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+}
+div#imagenRrss {
+    justify-self: end;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+div#textoRrss {
+    width: auto;
+    margin-top: 10px;
+}
+
+section#desarrollo {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    background-color: silver;
+    font-weight: bold;
+}
+div#imagenDesarrollo {
+    justify-self: end;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+div#textoDesarrollo {
+    width: auto;
+    margin-top: 10px;
+}
+
+section#ecommerce {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+}
+div#imagenEcommerce {
+    justify-self: end;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+div#textoEcommerce {
+    width: auto;
+    margin-top: 10px;
+}
+
+section#contacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    height: 350px;
+    background-color: silver;
+}
+div#botonContacto {
+    justify-self: center;
+    align-self: center;
+}

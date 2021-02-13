@@ -1,0 +1,31 @@
+section#form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "menuPrincipal menuPrincipal menuPrincipal"
+    "formulario formulario formulario "
+    "footer footer footer";
+}
+
+header#menuPrincipal {
+    grid-area: menuPrincipal;
+}
+
+section#formularioGoogle {
+    grid-area: formulario;
+}
+
+section#formularioGoogle {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+}
+
+iframe#google {
+    justify-self: center;
+}
+
+footer {
+    grid-area: footer;
+}

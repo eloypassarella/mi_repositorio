@@ -18,41 +18,104 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
 
         <title>D-Today Contacto</title>
     </head>
     <body>
+
         <section id="form" >
             <header id="menuPrincipal" class="header">
-                <!--LOGO-->
-                <img src="../images/logo.png" alt="Logo D-Today" class="header__logo">
-                
-                <nav>	<!--MENU-->
-                    <ul class="header__menu">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/servicios.html">Servicios</a> 
-                            <ul class="header__subMenu">
-                                <li>Redes</li>
-                                <li>Website</li>
-                                <li>E-commerce</li>
-                            </ul>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <img src="../images/logo.png" alt="Logo D-Today" class="header__logo">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
                         </li>
-                        <li><a href="../pages/nuestros_clientes.html">Clientes</a> </li>
-                        <li><a href="../pages/blog.html">Blog</a> </li>
-                        <li><a href="../pages/contacto.html">Contacto</a> </li>
-                    </ul>
-                </nav>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../pages/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../pages/nuestros_clientes.html">Clientes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            servicios
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../pages/servicios.html">Redes Sociales</a>
+                            <a class="dropdown-item" href="../pages/servicios.html">Desarrollo Web</a>
+                            <a class="dropdown-item" href="../pages/servicios.html">E-commerce</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </nav>  
             </header>
 
         <section id="formularioGoogle">
             <div id="formDiv">
                 <h1>Dejá tus datos para que un asesor comercial se contacte contigo:</h1>
-                <iframe id="google" class="container-fluid" src="https://docs.google.com/forms/d/e/1FAIpQLScnEQvwSZPBg1rxJhMoFFSvZ-MVejokr-rnPdDVVfWXQsCGYA/viewform?embedded=true" width="360" height="1100" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-            </div>
-        </section>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-group col-lg-12">
+                            <label for="inputNombre">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre y Apellido">
+                            </div>
+                            </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Telefono</label>
+                        <input type="Telefono" class="form-control" id="inputTelefono">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Dirección</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="calle 123 timbre 1">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress2">Provincia</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="buenos aires">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">Localidad</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState">Servicio a cotizar</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Elegir...</option>
+                          <option>RRSS</option>
+                          <option>Desarrollo Web</option>
+                          <option>Ecommerce</option>
+                          <option>Todos</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Enviarme información
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
         </section>
 
             <footer class="container-fluid">

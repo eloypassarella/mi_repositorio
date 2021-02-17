@@ -23,57 +23,13 @@
     background-color: #FEFFFF; }
   
     /*-----Menu-----*/
-
-    header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      background-color: #fbfdfd;
-      justify-content: center;
-      align-items: center;
-      height: 170px ; }
-     
-    
-    nav {
-      justify-self: center; 
-      }
     
     .header__logo {
-      width: 160px;
-      height: 160px;
+      width: 200px;
+      height: auto;
       margin: 5px;
       justify-self: center; }
     
-    nav ul {
-      display: flex;
-      justify-self: flex-end;
-     }
-    
-    nav ul li {
-      margin: 0 5px;
-      position: relative;
-      transition: 1seg; }
-    
-    nav ul li:hover {
-      background-color: #58f6fc;
-      color: #000505; }
-    
-    /*-----SubMenu-----*/
-    .header__subMenu {
-      display: none;
-      background-color: #080808;
-      color: #fafafa;
-      position: absolute;
-      top: 100%;
-      width: 100px;
-      text-align: center; }
-    
-    .header__subMenu li {
-      display: block; }
-    
-    nav li:hover .header__subMenu {
-      display: block; }
-
 /*-----index-----*/
 section#paginaPrincipal {
   display: grid;

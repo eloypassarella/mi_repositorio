@@ -27,24 +27,39 @@
     <body>
         <section id="paginaServicios" class="container-fluid">
             <header id="menuPrincipal" class="header">
-                <!--LOGO-->
-                <img src="../images/logo.png" alt="Logo D-Today" class="header__logo">
-                
-                <nav>	<!--MENU-->
-                    <ul class="header__menu">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/servicios.html">Servicios</a> 
-                            <ul class="header__subMenu">
-                                <li>Redes</li>
-                                <li>Website</li>
-                                <li>E-commerce</li>
-                            </ul>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <img src="../images/logo.png" alt="Logo D-Today" class="header__logo">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
                         </li>
-                        <li><a href="../pages/nuestros_clientes.html">Clientes</a> </li>
-                        <li><a href="../pages/blog.html">Blog</a> </li>
-                        <li><a href="../pages/contacto.html">Contacto</a> </li>
-                    </ul>
-                </nav>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../pages/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../pages/nuestros_clientes.html">Clientes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            servicios
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../pages/servicios.html">Redes Sociales</a>
+                            <a class="dropdown-item" href="../pages/servicios.html">Desarrollo Web</a>
+                            <a class="dropdown-item" href="../pages/servicios.html">E-commerce</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </nav>
+                
             </header>
             <section id="rrss">
                 <div id="imagenRrss">
